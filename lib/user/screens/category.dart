@@ -19,7 +19,7 @@ class CategoryScreen extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: ElktraCubit.get(context).dark
-            ? AppColorsDarkTheme.scaffoldBackGroundColor
+            ? AppColorsDarkTheme.defaultColor
             : AppColorsLightTheme.grey200,
         title:const Text(AppStrings.categoryScreenTitle),
       ),

@@ -32,3 +32,21 @@ List<GButton> bottomBavBarTabs =const [
   ),
    GButton(icon: Icons.settings, text: 'Setting')
 ];
+List<BottomNavigationBarItem>bottomNavBarTabs = const [
+  BottomNavigationBarItem(
+      icon: Icon(IconBroken.Home),
+      label: 'Home'),
+  BottomNavigationBarItem(
+      icon: Icon(IconBroken.Heart),
+      label: 'Favorite'),
+  BottomNavigationBarItem(
+      icon: Icon(IconBroken.Bag),
+      label: 'Cart'),
+  BottomNavigationBarItem(
+      icon: Icon(IconBroken.Category),
+      label: 'Category'),
+  BottomNavigationBarItem(
+      icon: Icon(IconBroken.Setting),
+      label: 'Setting'),
+
+];

@@ -9,8 +9,8 @@ class AppColorsLightTheme{
   static const Color greyColor = Colors.grey;
   static const Color blackColor = Colors.black;
 }
-class AppColorsDarkTheme{
-  static const Color scaffoldBackGroundColor = Colors.black;
-  static  Color defaultColor = HexColor('1F6E8C');
+class AppColorsDarkTheme {
+  static Color scaffoldBackGroundColor = Colors.black;
+  static Color defaultColor = HexColor('1F6E8C');
   static Color whiteColor = Colors.white;
 }

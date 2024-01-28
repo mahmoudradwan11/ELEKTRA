@@ -43,6 +43,8 @@ class DefaultFieldForm extends StatelessWidget {
       validator: valid,
       controller: controller,
       decoration: InputDecoration(
+        filled: true,
+        fillColor:ElktraCubit.get(context).dark?AppColorsDarkTheme.defaultColor.withOpacity(0.3):AppColorsLightTheme.defaultColor.withOpacity(0.2),
         hintText: hint,
         hintStyle: hintStyle,
         labelText: label,
@@ -67,13 +69,13 @@ class DefaultFieldForm extends StatelessWidget {
         // borderRadius: BorderRadius.circular(30
         prefixIcon: Icon(
           prefix,
-          color:ElktraCubit.get(context).dark?AppColorsDarkTheme.defaultColor:AppColorsLightTheme.defaultColor,
+          color:ElktraCubit.get(context).dark?AppColorsDarkTheme.whiteColor:AppColorsLightTheme.defaultColor,
         ),
         suffixIcon: suffix != null
             ? IconButton(
           icon: Icon(suffix),
           onPressed: suffixPress,
-          color:ElktraCubit.get(context).dark?AppColorsDarkTheme.defaultColor:AppColorsLightTheme.defaultColor
+          color:ElktraCubit.get(context).dark?AppColorsDarkTheme.whiteColor:AppColorsLightTheme.defaultColor
         )
             : null,
       ),

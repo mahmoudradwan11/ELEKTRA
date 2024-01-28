@@ -13,7 +13,7 @@ Widget buildReviewItem(ReviewsItems reviewModel, context, id) => Card(
     clipBehavior: Clip.antiAliasWithSaveLayer,
     elevation: 0.0,
     color: ElktraCubit.get(context).dark
-        ? AppColorsDarkTheme.scaffoldBackGroundColor
+        ? Colors.transparent
         : AppColorsLightTheme.scaffoldBackGroundColor,
     child: Padding(
       padding: const EdgeInsets.only(left: 10, right: 10),
@@ -118,7 +118,7 @@ Widget buildReviewItem(ReviewsItems reviewModel, context, id) => Card(
                                         .deleteReview(reviewModel.sId, id);
                                   },
                                   icon: Icon(IconBroken.Delete,color: ElktraCubit.get(context).dark
-                                      ? AppColorsDarkTheme.defaultColor
+                                      ? AppColorsDarkTheme.whiteColor
                                       : AppColorsLightTheme.defaultColor,),
                                 ),
                               ),
@@ -163,7 +163,7 @@ Widget buildReviewItem(ReviewsItems reviewModel, context, id) => Card(
                                         .deleteReview(reviewModel.sId, id);
                                   },
                                   icon: Icon(IconBroken.Delete,color: ElktraCubit.get(context).dark
-                                      ? AppColorsDarkTheme.defaultColor
+                                      ? AppColorsDarkTheme.whiteColor
                                       : AppColorsLightTheme.defaultColor,),
                                 ),
                               ),
@@ -204,7 +204,7 @@ Widget buildReviewItem(ReviewsItems reviewModel, context, id) => Card(
                                         .deleteReview(reviewModel.sId, id);
                                   },
                                   icon: Icon(IconBroken.Delete,color:  ElktraCubit.get(context).dark
-                                      ? AppColorsDarkTheme.defaultColor
+                                      ? AppColorsDarkTheme.whiteColor
                                       : AppColorsLightTheme.defaultColor,),
                                 ),
                               ),
@@ -239,7 +239,7 @@ Widget buildReviewItem(ReviewsItems reviewModel, context, id) => Card(
                                         .deleteReview(reviewModel.sId, id);
                                   },
                                   icon: Icon(IconBroken.Delete,color:ElktraCubit.get(context).dark
-                                      ? AppColorsDarkTheme.defaultColor
+                                      ? AppColorsDarkTheme.whiteColor
                                       : AppColorsLightTheme.defaultColor,),
                                 ),
                               ),
@@ -254,7 +254,7 @@ Widget buildReviewItem(ReviewsItems reviewModel, context, id) => Card(
                                   ? AppColorsDarkTheme.defaultColor
                                   : AppColorsLightTheme.defaultColor,
                             ),
-                            Spacer(),
+                            const Spacer(),
                             if (reviewModel.user!.name ==
                                 AdminUsersCubit.get(context)
                                     .profileModel!
@@ -268,7 +268,7 @@ Widget buildReviewItem(ReviewsItems reviewModel, context, id) => Card(
                                         .deleteReview(reviewModel.sId, id);
                                   },
                                   icon: Icon(IconBroken.Delete,color:ElktraCubit.get(context).dark
-                                      ? AppColorsDarkTheme.defaultColor
+                                      ? AppColorsDarkTheme.whiteColor
                                       : AppColorsLightTheme.defaultColor,),
                                 ),
                               ),

@@ -4,3 +4,5 @@ class ChangeCategoryIndex extends AppUiStates{}
 class ChangeSettingTitleIndex extends AppUiStates{}
 class ChangeProductDetialsIndex extends AppUiStates{}
 class ChangeTapBarTitleIndex extends AppUiStates{}
+class ChangeProductImageIndex extends AppUiStates{}
+

@@ -37,7 +37,7 @@ class FavoriteScreen extends StatelessWidget {
                     : AppColorsLightTheme.grey200,
                 appBar: AppBar(
                   backgroundColor: ElktraCubit.get(context).dark
-                      ? AppColorsDarkTheme.scaffoldBackGroundColor
+                      ? AppColorsDarkTheme.defaultColor
                       : AppColorsLightTheme.grey200,
                   title: const Text(AppStrings.favoriteScreenTitle),
                   centerTitle: true,

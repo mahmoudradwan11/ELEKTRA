@@ -5,7 +5,7 @@ import 'package:hexcolor/hexcolor.dart';
 ThemeData darkTheme = ThemeData(
   useMaterial3:false,
   primarySwatch: Colors.indigo,
-  appBarTheme: const AppBarTheme(
+  appBarTheme:  AppBarTheme(
     titleSpacing: 20.0,
     backgroundColor: AppColorsDarkTheme.scaffoldBackGroundColor,
     elevation: 0.0,

@@ -1,3 +1,4 @@
+import 'package:hexcolor/hexcolor.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:lp/core/Ui_controller/ui_cubit.dart';
 import 'package:lp/core/Ui_controller/ui_states.dart';
@@ -43,7 +44,7 @@ class ProductsScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: InkWell(
-                    child: const Icon(Icons.dark_mode),
+                    child: ElktraCubit.get(context).dark?const Icon(Icons.light):const Icon(Icons.dark_mode),
                     onTap: () {
                       ElktraCubit.get(context).changeAppMode();
                     },
@@ -67,6 +68,7 @@ class ProductsScreen extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
+                  if(cubit.homeLaptops!=null)
                   BlocConsumer<AppUiCubit, AppUiStates>(
                       listener: (context, state) {},
                       builder: (context, state) {
@@ -88,6 +90,13 @@ class ProductsScreen extends StatelessWidget {
                           ),
                         );
                       }),
+                  if(cubit.homeLaptops == null)
+                   Center(
+                  child: LoadingAnimationWidget.inkDrop(
+                  color:ElktraCubit.get(context).dark?AppColorsDarkTheme.defaultColor:AppColorsLightTheme.defaultColor,
+                  size: 20
+                  ),
+                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 20.0),
                     child: Row(children: [

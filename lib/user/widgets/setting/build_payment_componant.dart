@@ -11,7 +11,7 @@ Widget buildPaymentComponent(context)=>Column(
     CreditCardWidget(
       chipColor: Colors.grey,
       bankName: 'National Bank of Egypt',
-cardBgColor:ElktraCubit.get(context).dark?AppColorsDarkTheme.defaultColor:AppColorsLightTheme.defaultColor,
+cardBgColor:ElktraCubit.get(context).dark?AppColorsDarkTheme.defaultColor.withOpacity(0.8):AppColorsLightTheme.defaultColor,
       cardNumber:'4242424242424242',
       expiryDate:'12/25',
       cardHolderName:AdminUsersCubit.get(context).profileModel!.user!.name!,
@@ -28,10 +28,7 @@ cardBgColor:ElktraCubit.get(context).dark?AppColorsDarkTheme.defaultColor:AppCol
     ),
     Container(
       color: Colors.transparent,
-      height: 180,
+      height: 300,
     ),
-    const Align(
-      alignment: AlignmentDirectional.center,
-        child: Text('Powered By Paymob ',style: TextStyle(color: Colors.yellow,fontWeight: FontWeight.w600,fontSize: AppFontsSize.fontSize18),))
-  ],
+    ],
 );

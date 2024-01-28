@@ -39,7 +39,7 @@ class CartScreen extends StatelessWidget {
                 : AppColorsLightTheme.grey200,
             appBar: AppBar(
               backgroundColor: ElktraCubit.get(context).dark
-                  ? AppColorsDarkTheme.scaffoldBackGroundColor
+                  ? AppColorsDarkTheme.defaultColor
                   : AppColorsLightTheme.grey200,
               title: const Text(AppStrings.cardScreenTitle),
               centerTitle: true,
@@ -87,7 +87,7 @@ class CartScreen extends StatelessWidget {
                                     : AppColorsLightTheme.defaultColor,
                                 fontSize: AppFontsSize.fontSize20),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
                           Container(
