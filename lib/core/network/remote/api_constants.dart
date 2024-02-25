@@ -25,6 +25,7 @@ class ApiConstants {
   static const getAllReviewApi = 'https://elwekala.onrender.com/review/allreviews';
  static const  searchApi='https://elwekala.onrender.com/product/get/search';
  static const getAllProductsApi= 'https://elwekala.onrender.com/product/get/search';
+ static const sendContactApi = '$baseUrl/report';
  static const String baseUrlPayment = 'https://accept.paymob.com/api';
   static const String getAuthToken = '/auth/tokens';
   static String idCard = '3293535';

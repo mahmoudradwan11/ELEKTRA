@@ -8,6 +8,7 @@ import 'package:lp/core/network/remote/payment/payment_helper.dart';
 import 'package:lp/core/network/remote/store/dio_helper.dart';
 import 'package:lp/core/payment/payment_cubit/payment_cubit.dart';
 import 'package:lp/core/user_controller/chat_cubit/chat_cubit.dart';
+import 'package:lp/core/user_controller/contact_cubit/contact_cubit.dart';
 import 'package:lp/core/user_controller/db_cubit/db_cubit.dart';
 import 'package:lp/core/user_controller/favorite_cubit/favorite_cubit.dart';
 import 'package:lp/core/user_controller/forget_password_cubit/forget_password_cubit.dart';
@@ -71,6 +72,9 @@ class MyApp extends StatelessWidget {
         providers: [
           BlocProvider(
             create: (context) => OnboardingCubit(),
+            lazy: true,
+          ),
+          BlocProvider(create:(context)=>ContactUsCubit(),
             lazy: true,
           ),
           BlocProvider(

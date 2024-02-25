@@ -4,8 +4,10 @@ import 'package:lp/core/admin_controller/admin_users_cubit/admin_users_cubit.dar
 import 'package:lp/core/mangers/colors.dart';
 import 'package:lp/core/mangers/icon_broken.dart';
 import 'package:lp/core/mangers/images.dart';
+import 'package:lp/core/mangers/routes.dart';
 import 'package:lp/core/user_controller/user_version_cubit/user_version_cubit.dart';
 import 'package:lp/user/screens/chat_Admin.dart';
+import 'package:lp/user/screens/contact_us.dart';
 import 'package:lp/user/screens/edit_profile.dart';
 import 'package:lp/user/screens/order_screen.dart';
 import 'package:lp/user/screens/policy.dart';
@@ -69,7 +71,7 @@ Widget buildGeneralItems(context) => Padding(
             subtitle: 'Orders',
             icon: Icons.payment,
             context: context,
-            screen:OrderScreen()),
+            screen:const OrderScreen()),
         const SizedBox(
           height: 15,
         ),
@@ -79,7 +81,7 @@ Widget buildGeneralItems(context) => Padding(
             children: [
               InkWell(
                 onTap: () {
-                  //   navigateTo(context,ContactUs());
+                     navigateToNextScreen(context,ContactUsScreen());
                 },
                 child: Container(
                   height: 50,

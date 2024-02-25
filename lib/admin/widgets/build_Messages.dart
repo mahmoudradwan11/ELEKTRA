@@ -9,7 +9,7 @@ Widget builtMessage(Messages model,context)=>Align(
     children: [
       Container(
         decoration:BoxDecoration(
-          color:Colors.grey.withOpacity(0.8),
+          color:ElktraCubit.get(context).dark?AppColorsDarkTheme.whiteColor:AppColorsLightTheme.greyColor.withOpacity(0.8),
           borderRadius:const BorderRadiusDirectional.only(
             bottomEnd: Radius.circular(10.0),
             topEnd: Radius.circular(10.0),
