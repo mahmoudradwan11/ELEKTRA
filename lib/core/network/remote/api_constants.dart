@@ -11,9 +11,11 @@ class ApiConstants {
   static const homeLaptopApi = '$baseUrl/product/inCart/Laptops';
   static const homeSmartPhoneApi = '$baseUrl/product/inCart/Smart Phones';
   static const homeSmartWatchApi = '$baseUrl/product/inCart/Smart Watches';
+  static const topSellerApi = '$baseUrl/product/get/top-sellers';
   static const homeSmartTvsApi = '$baseUrl/product/inCart/Smart TVs';
   static const homeAccApi = '$baseUrl/product/inCart/PC and laptop accessories';
   static const favoriteApi = '$baseUrl/favorite';
+  static const sellerApi = '$baseUrl/product';
   static const addToCartApi = 'https://elwekala.onrender.com/cart/add';
   static const geyMyCartApi = 'https://elwekala.onrender.com/cart/allProducts';
   static const getTotalPriceApi = 'https://elwekala.onrender.com/cart/total';

@@ -78,4 +78,9 @@ class AppUiCubit extends Cubit<AppUiStates> {
       print(tapBarTitleIndex);
       emit(ChangeTapBarTitleIndex());
     }
+    int sellerTitleIndex = 0;
+    void changeProductSellerView(int index) {
+    sellerTitleIndex = index;
+    emit(ChangeProductSellerIndex());
+  }
 }

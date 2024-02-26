@@ -12,5 +12,13 @@ class GetHomeTvs extends ElktraStates{}
 class ErrorGetHomeTvs extends ElktraStates{}
 class GetHomeAcc extends ElktraStates{}
 class ErrorGetHomeAcc extends ElktraStates{}
+class GetAllSellerProducts extends ElktraStates{}
+class ErrorGetAllSellerProducts extends ElktraStates{}
+class GetTopSeller extends ElktraStates{}
+class ErrorGetTopSeller extends ElktraStates{}
+
+
+
+
 
 

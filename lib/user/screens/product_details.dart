@@ -4,6 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:lottie/lottie.dart';
+import 'package:lp/core/mangers/routes.dart';
+import 'package:lp/core/screens/seller.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:lp/core/Ui_controller/ui_cubit.dart';
 import 'package:lp/core/Ui_controller/ui_states.dart';
@@ -282,18 +284,14 @@ class _ProductDetailsState extends State<ProductDetails> {
                           ),
                           InkWell(
                             onTap: () {
-                              /*
-                            cubit.getSellerProducts(model.company!);
-                            cubit.getFilterSellerProducts(model.company);
-                            cubit.changeView(0);
-                            navigateTo(
+                            ElktraCubit.get(context).getSellerProducts(widget.model.company!);
+                            navigateToNextScreen(
                                 context,
                                 SellersScreen(
-                                  name: model.company,
-                                  image: cubit.companyImage,
+                                  name: widget.model.company,
+                                  image: widget.companyImage,
                                 ));
 
-                             */
                             },
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,

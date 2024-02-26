@@ -9,6 +9,8 @@ import 'package:lp/user/models/home/smart_tvs.dart';
 import 'package:lp/user/models/home/smartphone.dart';
 import 'package:lp/user/models/home/smartwatch.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:lp/user/models/seller.dart';
+import 'package:lp/user/models/top_seller.dart';
 
 class ElktraCubit extends Cubit<ElktraStates> {
   ElktraCubit() : super(ElktraInitState());
@@ -114,5 +116,35 @@ class ElktraCubit extends Cubit<ElktraStates> {
     getHomeSmartWatches();
     getHomeSmartTvs();
     getHomeAcc();
+    getSellerProducts('Dell');
+    getTopSeller();
+  }
+  SellersModel? sellersModel;
+
+  void getSellerProducts(seller) {
+    DioHelperStore.getData(url: ApiConstants.sellerApi, data: {"company": seller})
+        .then((value) {
+      sellersModel = SellersModel.fromJson(value.data);
+      print(sellersModel!.allProducts!.length);
+      print(sellersModel!.usedProduct!.length);
+      print(sellersModel!.newProduct!.length);
+      emit(GetAllSellerProducts());
+    }).catchError((error) {
+      print(error.toString());
+      emit(ErrorGetAllSellerProducts());
+    });
+  }
+  TopSellerModel? topSellerModel;
+  void getTopSeller(){
+    DioHelperStore.getData(url:ApiConstants.topSellerApi,data:{
+      "limit": 900
+    }).then((value){
+      topSellerModel = TopSellerModel.fromJson(value.data);
+      print(topSellerModel!.topSellingCompany![0].sId);
+      emit(GetTopSeller());
+    }).catchError((error){
+      print(error.toString());
+      emit(ErrorGetTopSeller());
+    });
   }
 }
