@@ -5,7 +5,6 @@ import 'package:lp/core/user_controller/user_version_cubit/user_version_cubit.da
 import 'package:lp/core/user_controller/user_version_cubit/user_version_states.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 class UserHomeScreen extends StatelessWidget {
   const UserHomeScreen({Key? key}) : super(key: key);
   @override

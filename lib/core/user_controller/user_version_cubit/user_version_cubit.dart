@@ -1,3 +1,4 @@
+import 'package:lp/core/mangers/images.dart';
 import 'package:lp/core/mangers/values.dart';
 import 'package:lp/core/network/local/cache_helper.dart';
 import 'package:lp/core/network/remote/api_constants.dart';
@@ -141,6 +142,33 @@ class ElktraCubit extends Cubit<ElktraStates> {
     }).then((value){
       topSellerModel = TopSellerModel.fromJson(value.data);
       print(topSellerModel!.topSellingCompany![0].sId);
+      if(topSellerModel!.topSellingCompany![0].sId=='HP') {
+        bestSellerImage = AppImages.hpCompanyImage;
+      }
+      if(topSellerModel!.topSellingCompany![0].sId =='Dell') {
+        bestSellerImage = AppImages.dellCompanyImage;
+      }
+      if(topSellerModel!.topSellingCompany![0].sId=='Lenovo') {
+        bestSellerImage = AppImages.lenovoCompanyImage;
+      }
+      if(topSellerModel!.topSellingCompany![0].sId=='Xiaomi') {
+        bestSellerImage = AppImages.xiaomiCompanyImage;
+      }
+      if(topSellerModel!.topSellingCompany![0].sId=='Apple') {
+        bestSellerImage = AppImages.appleCompanyImage;
+      }
+      if(topSellerModel!.topSellingCompany![0].sId=='Samsung') {
+        bestSellerImage = AppImages.samsungCompanyImage;
+      }
+      if(topSellerModel!.topSellingCompany![0].sId=='Microsoft') {
+        bestSellerImage = AppImages.microsoftCompanyImage;
+      }
+      if(topSellerModel!.topSellingCompany![0].sId=='LG') {
+        bestSellerImage = AppImages.lgCompanyImage;
+      }
+      if(topSellerModel!.topSellingCompany![0].sId=='Huawei') {
+        bestSellerImage = AppImages.huaweiCompanyImage;
+      }
       emit(GetTopSeller());
     }).catchError((error){
       print(error.toString());

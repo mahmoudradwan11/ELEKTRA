@@ -4,17 +4,16 @@ import 'package:hexcolor/hexcolor.dart';
 
 ThemeData darkTheme = ThemeData(
   useMaterial3:false,
-  primarySwatch: Colors.indigo,
   appBarTheme:  AppBarTheme(
     titleSpacing: 20.0,
     backgroundColor: AppColorsDarkTheme.scaffoldBackGroundColor,
     elevation: 0.0,
-    titleTextStyle: TextStyle(
+    titleTextStyle:const TextStyle(
       color: Colors.white,
       fontSize: 20.0,
       fontWeight: FontWeight.bold,
     ),
-    iconTheme: IconThemeData(
+    iconTheme:const  IconThemeData(
       color: Colors.white,
     ),
   ),

@@ -112,8 +112,10 @@ class MyApp extends StatelessWidget {
             lazy: false,
           ),
           BlocProvider(
-              create: (context) => AdminVersionCubit()..getAdminData(),
-              lazy: true),
+              create: (context) => AdminVersionCubit()..getAdminData()
+                ..getCompaniesSales()
+              ..getCategriesProducts(),
+              lazy: false),
           BlocProvider(
             create: (context) => ElktraCubit()
               ..changeAppMode(fromShared: appMode)

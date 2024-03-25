@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 ThemeData lightTheme = ThemeData(
   useMaterial3: false,
-  primarySwatch:Colors.indigo,
   appBarTheme: const AppBarTheme(
     titleSpacing: 20.0,
     backgroundColor: Colors.white,

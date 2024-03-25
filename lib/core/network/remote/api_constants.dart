@@ -1,3 +1,5 @@
+import 'package:lp/admin/models/company_products_model.dart';
+
 const String baseUrl = 'https://elwekala.onrender.com';
 class ApiConstants {
   static const loginApi = '$baseUrl/user/login';
@@ -28,6 +30,7 @@ class ApiConstants {
  static const  searchApi='https://elwekala.onrender.com/product/get/search';
  static const getAllProductsApi= 'https://elwekala.onrender.com/product/get/search';
  static const sendContactApi = '$baseUrl/report';
+ static const companyProductsSales = '$baseUrl/product/get/sorted-products';
  static const String baseUrlPayment = 'https://accept.paymob.com/api';
   static const String getAuthToken = '/auth/tokens';
   static String idCard = '3293535';
@@ -41,3 +44,18 @@ class ApiConstants {
 var authToken;
 var orderPaymentId;
 var finalToken;
+var h;
+var d;
+var l;
+var s;
+var g;
+var a;
+var x;
+var m;
+var p;
+var laptops;
+var watches;
+var acc;
+var tv;
+var head;
+var phones;

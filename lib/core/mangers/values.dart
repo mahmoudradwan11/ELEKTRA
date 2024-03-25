@@ -21,3 +21,4 @@ var token;
 var nationalId;
 var adminId = '12345678910123';
 var companyImage;
+var bestSellerImage;
