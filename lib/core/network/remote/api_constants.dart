@@ -21,6 +21,7 @@ class ApiConstants {
   static const addToCartApi = 'https://elwekala.onrender.com/cart/add';
   static const geyMyCartApi = 'https://elwekala.onrender.com/cart/allProducts';
   static const getTotalPriceApi = 'https://elwekala.onrender.com/cart/total';
+  static const addProductApi = '$baseUrl/product/add';
   static const deleteCartApi = 'https://elwekala.onrender.com/cart/delete';
   static const updateQuantityApi = 'https://elwekala.onrender.com/cart';
   static const logoutApi= 'https://elwekala.onrender.com/user/logout';
@@ -41,6 +42,7 @@ class ApiConstants {
   static const paymentApiKey =
       'ZXlKaGJHY2lPaUpJVXpVeE1pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnVZVzFsSWpvaWFXNXBkR2xoYkNJc0luQnliMlpwYkdWZmNHc2lPalkzTkRnek1Td2lZMnhoYzNNaU9pSk5aWEpqYUdGdWRDSjkuYzg3dG1oTi1IMi1RNWlEZ1BBdEFZUUZnbUJWTFRrLWRlYTF1OG1TMVlmNU1hTVotOUJGMUNmRTJYZElaQzFzYkhSVl8xTWZLa3dCdmRpNlNPbWdfS0E=';
 }
+
 var authToken;
 var orderPaymentId;
 var finalToken;

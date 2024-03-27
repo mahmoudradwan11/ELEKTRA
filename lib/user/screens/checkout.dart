@@ -5,14 +5,11 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:intl/intl.dart';
 import 'package:lp/core/mangers/colors.dart';
 import 'package:lp/core/mangers/icon_broken.dart';
-import 'package:lp/core/mangers/routes.dart';
 import 'package:lp/core/mangers/values.dart';
 import 'package:lp/core/payment/payment_cubit/payment_cubit.dart';
-import 'package:lp/core/payment/payment_cubit/payment_state.dart';
 import 'package:lp/core/user_controller/db_cubit/db_cubit.dart';
 import 'package:lp/core/user_controller/db_cubit/db_states.dart';
 import 'package:lp/core/user_controller/user_version_cubit/user_version_cubit.dart';
-import 'package:lp/user/screens/visa.dart';
 import 'package:lp/user/widgets/text_form_feild.dart';
 import 'package:slide_action/slide_action.dart';
 

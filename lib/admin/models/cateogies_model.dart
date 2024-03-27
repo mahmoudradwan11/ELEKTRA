@@ -33,7 +33,7 @@ class CategiesModels{
         if (v['category'] == 'Smart TVs') {
           tvs!.add(Products.fromJson(v));
         }
-        if (v['category'] == 'Headphone') {
+        if (v['category'] == 'HeadPhone') {
           headPhone!.add(Products.fromJson(v));
         }
       }

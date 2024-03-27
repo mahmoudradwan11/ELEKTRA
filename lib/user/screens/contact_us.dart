@@ -20,7 +20,7 @@ class ContactUsScreen extends StatelessWidget {
           var cubit = ContactUsCubit.get(context);
           return Scaffold(
             appBar: AppBar(
-              leading: Icon(Icons.arrow_back,color: Colors.white,),
+              leading: const Icon(Icons.arrow_back,color: Colors.white,),
               backgroundColor: ElktraCubit.get(context).dark?AppColorsDarkTheme.defaultColor:AppColorsLightTheme.defaultColor,
               title:const Text('Report',style: TextStyle(color: Colors.white),),
             ),

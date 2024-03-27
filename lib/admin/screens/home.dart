@@ -1,4 +1,6 @@
 import 'package:hexcolor/hexcolor.dart';
+import 'package:lp/admin/screens/add_product.dart';
+import 'package:lp/admin/screens/product_screen.dart';
 import 'package:lp/admin/screens/users.dart';
 import 'package:lp/core/admin_controller/admin_users_cubit/admin_users_cubit.dart';
 import 'package:lp/core/admin_controller/admin_users_cubit/admin_users_states.dart';
@@ -78,11 +80,26 @@ class AdminHomeScreen extends StatelessWidget {
                     navigateToNextScreen(context, const UsersScreen());
                   },
                 ),
+                ListTile(
+                  title: const Text('AddProduct',style: TextStyle(color: Colors.white),),
+                  leading: const Icon(Icons.add,color: Colors.white,),
+                  onTap: () {
+                    navigateToNextScreen(context, AddProductScreen());
+                  },
+                ),
+                ListTile(
+                  title: const Text('AllProduct',style: TextStyle(color: Colors.white),),
+                  leading: const Icon(Icons.production_quantity_limits,color: Colors.white,),
+                  onTap: () {
+                    navigateToNextScreen(context, const ProductsScreen());
+                  },
+                ),
               ],
             ),
           ),
           body: Container(
             decoration: BoxDecoration(
+
                 gradient: ElktraCubit.get(context).dark
                     ? LinearGradient(colors: [
                         HexColor('#000428'),

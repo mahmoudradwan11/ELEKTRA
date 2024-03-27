@@ -1,4 +1,3 @@
-import 'package:bloc/bloc.dart';
 import 'package:lp/admin/models/cateogies_model.dart';
 import 'package:lp/admin/models/company_products_model.dart';
 import 'package:lp/core/admin_controller/admin_version_cubit/admin_version_states.dart';
@@ -61,5 +60,4 @@ class AdminVersionCubit extends Cubit<AdminVersionStates>{
       emit(ErrorGetCategories());
     });
   }
-
 }

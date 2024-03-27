@@ -6,3 +6,4 @@ class GetCompaniesSales extends AdminVersionStates{}
 class ErrorGetCompaniesSales extends AdminVersionStates{}
 class GetCategories extends AdminVersionStates{}
 class ErrorGetCategories extends AdminVersionStates{}
+

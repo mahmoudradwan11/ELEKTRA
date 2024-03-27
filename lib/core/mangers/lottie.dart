@@ -7,4 +7,6 @@ class AppLottieAssets{
   static const String emptyCartList = '$lottieAssets/empty_cart.json';
   static const String emptyReview = '$lottieAssets/empty_review.json';
   static const String warningLayOut = '$lottieAssets/warning.json';
+  static const String addProduct = '$lottieAssets/add_Done.json';
+
 }

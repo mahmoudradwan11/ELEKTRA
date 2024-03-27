@@ -1,6 +1,7 @@
 import 'package:lp/core/Ui_controller/ui_cubit.dart';
 import 'package:lp/core/admin_controller/admin_users_cubit/admin_users_cubit.dart';
 import 'package:lp/core/admin_controller/admin_version_cubit/admin_version_cubit.dart';
+import 'package:lp/core/admin_controller/product_cubit/product_cubit.dart';
 import 'package:lp/core/mangers/routes.dart';
 import 'package:lp/core/mangers/themes/dark.dart';
 import 'package:lp/core/mangers/values.dart';
@@ -140,7 +141,9 @@ class MyApp extends StatelessWidget {
             create: (context) => DatabaseCubit()..createDatabase(),
             lazy: false,
           ),
-
+          BlocProvider(create:(context)=>ProductCubit()..getAllProduct(keyword:''),
+            lazy:false,
+          ),
         ],
         child: BlocConsumer<ElktraCubit, ElktraStates>(
             listener: (context, state) {},
